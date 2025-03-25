@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/below2000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Attachment of Proof of Structure (Minimum 1)"
+            android:textColor="@color/darkTextColor"
+            android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/et_attacheInfoOne"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="0 out of 9 attached" />
+
+
+            <LinearLayout
+                android:id="@+id/btn_Browse_2000_below_One"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:layout_weight="1.4"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/main_color"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:text="Attach"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Attachment of Proof of License (Minimum 1)"
+            android:textColor="@color/darkTextColor"
+            android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_weight="0.6"
+                android:id="@+id/et_attacheInfoTwo"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+
+
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="0 out of 3 attached"
+                android:layout_marginLeft="@dimen/_5sdp"
+                />
+
+
+            <LinearLayout
+                android:layout_weight="1.4"
+                android:id="@+id/btn_Browse_2000_below_Two"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/main_color"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:text="Attach"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Attachment of 1 year Recent proof (Minimum 1)"
+            android:textColor="@color/darkTextColor"
+            android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <EditText
+                android:id="@+id/et_attacheRecentComm2000"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:background="@drawable/rounded_edittext"
+                android:clickable="false"
+                android:cursorVisible="false"
+
+
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="0 out of 2 attached" />
+
+
+            <LinearLayout
+                android:id="@+id/btn_Browse_recent_comm_2000"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:layout_weight="1.4"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/main_color"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:paddingEnd="@dimen/_3sdp"
+                    android:text="Attach"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/till2011"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of Proof of Structure (Minimum 1)"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/et_attacheInfoThree"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 out of 9 attached" />
+
+
+                <LinearLayout
+                    android:id="@+id/btn_Browse_till_2011_One"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of Proof of License (Minimum 1)"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_weight="0.6"
+                    android:id="@+id/et_attacheInfoFour"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 out of 3 attached"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_weight="1.4"
+                    android:id="@+id/btn_Browse_till_2011_Two"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_15sdp"-->
+<!--                android:text="Attachment of Proof of Address (Minimum  1)"-->
+<!--                android:textColor="@color/darkTextColor"-->
+<!--                android:drawableEnd="@drawable/red_asterisk_svg"/>-->
+
+
+<!--            <LinearLayout-->
+<!--                android:weightSum="2"-->
+<!--                android:layout_marginTop="@dimen/_3sdp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--                <EditText-->
+<!--                    android:layout_weight="0.6"-->
+<!--                    android:id="@+id/et_attacheInfoFive"-->
+<!--                    style="@style/MyEditText"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/rounded_edittext"-->
+<!--                    android:clickable="false"-->
+<!--                    android:cursorVisible="false"-->
+
+
+<!--                    android:focusable="false"-->
+<!--                    android:focusableInTouchMode="false"-->
+<!--                    android:inputType="number"-->
+<!--                    android:singleLine="true"-->
+<!--                    android:text="0 out of 3 attached"-->
+<!--                    android:layout_marginLeft="@dimen/_5sdp"-->
+<!--                    />-->
+
+
+<!--                <LinearLayout-->
+<!--                    android:layout_weight="1.4"-->
+<!--                    android:id="@+id/btn_Browse_till_2011_Three"-->
+<!--                    style="@style/MyEditText"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/_9sdp"-->
+<!--                    android:background="@drawable/rounded_edittext"-->
+<!--                    android:backgroundTint="@color/main_color"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:paddingStart="@dimen/_3sdp"-->
+<!--                        android:paddingEnd="@dimen/_3sdp"-->
+<!--                        android:text="Attach"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="@dimen/_12ssp" />-->
+<!--                </LinearLayout>-->
+
+
+<!--            </LinearLayout>-->
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of Proof of Chain of Agreement (Minimum 1)"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_weight="0.6"
+                    android:id="@+id/et_attacheInfoSix"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 out of 2 attached"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_weight="1.4"
+                    android:id="@+id/btn_Browse_till_2011_Four"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of Proof of identity (Minimum 1)"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_weight="0.6"
+                    android:id="@+id/et_attacheInfoSeven"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 out of 1 attached"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_weight="1.4"
+                    android:id="@+id/btn_Browse_till_2011_Five"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of Proof of payment receipt from SRA (Minimum 1)"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_weight="0.6"
+                    android:id="@+id/et_attacheInfoEE"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 out of 1 attached"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_weight="1.4"
+                    android:id="@+id/btn_Browse_till_2011_FF"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of One year recent proof (Minimum 1)"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/et_attacheRecentComm2011"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 out of 2 attached" />
+
+
+                <LinearLayout
+                    android:id="@+id/btn_Browse_recent_comm_2011"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/after2011"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of Proof of Structure (Minimum 1)"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/et_attacheInfoEight"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 out of 9 attached" />
+
+
+                <LinearLayout
+                    android:id="@+id/btn_Browse_after_2011_One"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of Proof of Chain of Agreement  (OLD and Current) (Minimum 1)"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_weight="0.6"
+                    android:id="@+id/et_attacheInfoNine"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 out of 3 attached"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_weight="1.4"
+                    android:id="@+id/btn_Browse_after_2011_Two"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of Proof of any other document (Minimum 1)"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_weight="0.6"
+                    android:id="@+id/et_attacheInfoTen"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 out of 19 attached"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_weight="1.4"
+                    android:id="@+id/btn_Browse_after_2011_Three"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/surveyPavtiExtraLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of Survey Pavti"
+                android:textColor="@color/darkTextColor"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/et_surveyPavti"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 out of 1 attached" />
+
+
+                <LinearLayout
+                    android:id="@+id/btn_Browse_survey_pavti"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="0.6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Survey Pavti No."
+                        android:textColor="@color/darkTextColor"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_survey_pavti_num"
+                        style="@style/MyEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/rounded_edittext"
+                        android:singleLine="true"
+                        android:hint="Enter survey pavti number"
+                        android:maxLength="20"
+                        />
+
+                </LinearLayout>
+
+                <EditText
+                    android:visibility="invisible"
+                    style="@style/MyEditText"
+                    android:layout_weight="1.4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:singleLine="true"
+                    android:maxLength="50"
+                    android:digits="@string/allowed_char_editText"
+                    android:text=""
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/photoExtraLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of Photo with Unique ID (Minimum 1)"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/et_attachePhoto"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 out of 1 attached" />
+
+
+                <LinearLayout
+                    android:id="@+id/btn_Browse_unique_photo"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/othersExtraLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="Attachment of Other Documents"
+                android:textColor="@color/darkTextColor" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/et_others"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+
+
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="0 attached" />
+
+
+                <LinearLayout
+                    android:id="@+id/btn_Browse_others_documents"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_9sdp"
+                    android:layout_weight="1.4"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/main_color"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/_3sdp"
+                        android:paddingEnd="@dimen/_3sdp"
+                        android:text="Attach"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12ssp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context="com.igenesys.WorkAreaActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_login_bg"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotobold"
+                android:letterSpacing=".03"
+                android:text="@string/gdc"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_35ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/robotolight"
+                android:text="@string/genesys_data_collection"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/materialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/login_card_rounded_corner">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_15sdp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/welcomeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/robotoregular"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3sp"
+
+                    android:text="Welcome Back\nUser!!"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20ssp" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/offlineCheckBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcomeTxt"
+                    android:layout_marginStart="@dimen/_23sdp"
+                  android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:text="If you wish to load the offline maps, please select the checkbox."
+                    android:textColor="@color/white"
+                    android:foregroundTint="@color/white"
+                    app:useMaterialThemeColors="false"
+                    android:textSize="@dimen/_8ssp"
+                    android:visibility="visible" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/framelayout_dropdown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_below="@+id/offlineCheckBox2">
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tIL_GridLayout"
+                        style="@style/MyDenseOutlinedDropDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:visibility="visible"
+                        android:textColorHint="@color/white"
+                        android:theme="@style/TextInputLayoutStyle"
+                        app:boxCornerRadiusBottomEnd="@dimen/_25sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_25sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_25sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_25sdp"
+                        app:boxStrokeColor="@color/dark_light_blue"
+                        app:boxStrokeWidth="2dp"
+                        app:endIconDrawable="@drawable/keyboard_arrow_down_24"
+                        app:endIconTint="#FFFFFF"
+                        app:hintTextColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/autoCompleteGridLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/welcomeTxt"
+                            android:drawableStart="@drawable/work_area_img"
+                            android:drawablePadding="@dimen/_15sdp"
+                            android:dropDownWidth="wrap_content"
+                            android:dropDownSelector="@color/dark_light_blue"
+                            android:fontFamily="@font/robotoregular"
+                            android:imeOptions="actionNext"
+                            android:inputType="none"
+                            android:paddingLeft="4dp"
+                            android:paddingTop="4dp"
+                            android:paddingRight="26dp"
+                            android:paddingBottom="4dp"
+                            android:singleLine="true"
+                            android:textAppearance="@style/MyDenseOutlined"
+                            android:textColor="@color/white"
+                            android:textColorHighlight="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textColorLink="@color/white"
+                            android:textSize="16sp"
+
+                            app:simpleItemSelectedColor="@color/yelloBright"
+                            app:simpleItemSelectedRippleColor="@color/dark_light_blue" />
+<!--                        <AutoCompleteTextView-->
+<!--                            android:id="@+id/autoCompMaritialStatus"-->
+<!--                            style="@style/MyEditText"-->
+<!--                            android:background="@drawable/edit_text_border"-->
+<!--                            android:drawableStart="@drawable/work_area_img"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginTop="@dimen/_3sdp"-->
+<!--                            android:drawableEnd="@drawable/svg_keyboard_arrow_down_24"-->
+<!--                            android:inputType="none"-->
+<!--                            android:singleLine="true" />-->
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/username_hint_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignStart="@+id/tIL_Username"
+                            android:layout_alignBottom="@+id/tIL_Username"
+                            android:layout_marginStart="56dp"
+                            android:layout_marginBottom="42dp"
+                            android:background="#4D70B1"
+                            android:paddingStart="4dp"
+                            android:paddingEnd="4dp"
+                            android:visibility="gone"
+                            tools:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/username_hint_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hint_username"
+                                android:textColor="@color/white"
+                                android:visibility="gone" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/cluster_hi_header"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:background="#5C67AC"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        android:visibility="visible"
+                        app:layout_constraintStart_toStartOf="@+id/tIL_GridLayout"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/cluster_hint_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hint_selectCluster"
+                            android:textColor="@color/white"
+                            android:visibility="visible"
+                            tools:visibility="visible" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/framelayout_dropdown"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:backgroundTint="@color/white"
+                    android:elevation="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_50sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_50sdp"
+                    android:stateListAnimator="@null"
+                    android:text="@string/continue_cap_text"
+                    android:textColor="@color/dark_red_font_color"
+                    android:textSize="@dimen/_12sdp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/txtAppVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="20dp"
+            android:text="v 2.5"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</layout>

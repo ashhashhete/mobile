@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="LoginViewModel"
+            type="com.igenesys.view.LoginViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.login.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_login_bg"
+            android:orientation="vertical">
+
+            <!--      <View
+                android:id="@+id/topView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/main_color" />-->
+            <!--
+            <ImageView
+                android:id="@+id/middleView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/top_curve" />-->
+
+            <!--        <View
+                android:id="@+id/bottomView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@color/white" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotobold"
+                android:letterSpacing=".03"
+                android:text="@string/gdc"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_35ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/robotolight"
+                android:text="@string/genesys_data_collection"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/materialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:paddingBottom="@dimen/_10sdp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/login_card_rounded_corner">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/welcomeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:fontFamily="@font/robotoregular"
+                    android:letterSpacing=".03"
+                    android:text="@string/welcome"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_30ssp"
+                    android:textStyle="bold" />
+
+                <!--    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_below="@+id/welcomeTxt"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:background="@drawable/edit_text_round"
+                        android:drawableStart="@drawable/username"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:hint="@string/hint_username"
+                        android:inputType="text"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp"
+                        android:textColor="@color/txt_dark_black" />
+    -->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tIL_Username"
+                    style="@style/MyDenseOutlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcomeTxt"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:animateLayoutChanges="false"
+                    android:animationCache="false"
+                    android:textColorHint="@color/white"
+                    app:boxCornerRadiusBottomEnd="@dimen/_25sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_25sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_25sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_25sdp"
+                    app:errorEnabled="false"
+                    app:boxStrokeColor="@color/white"
+                    app:hintAnimationEnabled="false"
+                    app:hintTextColor="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/usernameEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/welcomeTxt"
+                        android:drawableStart="@drawable/username_rounded"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:paddingStart="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="4dp"
+                        android:singleLine="true"
+                        android:text="@={LoginViewModel.UserName}"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/white"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/white"
+                        android:longClickable="false"
+                        android:textIsSelectable="false"
+                        android:importantForAutofill="no"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/username_hint_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/tIL_Username"
+                    android:layout_alignBottom="@+id/tIL_Username"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginBottom="42dp"
+                    android:background="#4D70B1"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/username_hint_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hint_username"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tIL_Password"
+                    style="@style/MyDenseOutlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tIL_Username"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:textColorHint="@color/white"
+                    app:boxBackgroundMode="outline"
+                    app:boxCornerRadiusBottomEnd="@dimen/_25sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_25sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_25sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_25sdp"
+                    app:boxStrokeColor="@color/white"
+                    app:errorEnabled="false"
+                    app:hintTextColor="@color/white"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/passwordEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/welcomeTxt"
+                        android:drawableStart="@drawable/password_rounded"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingStart="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="4dp"
+                        android:paddingEnd="4dp"
+                        android:paddingBottom="4dp"
+                        android:singleLine="true"
+                        android:text="@={LoginViewModel.Password}"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/white"
+                        android:textColorHighlight="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textColorLink="@color/white"
+                        android:textSize="@dimen/_12sdp"
+                        android:longClickable="false"
+                        android:textIsSelectable="false"
+                        android:importantForAutofill="no"
+                        />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/pass_hint_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tIL_Password"
+                    android:layout_alignBottom="@id/tIL_Password"
+                    android:layout_marginStart="56dp"
+                    android:layout_marginBottom="42dp"
+                    android:background="#546BAF"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:visibility="gone"
+                    tools:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/pass_hint_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hint_password"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:id="@+id/forgotPassTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tIL_Password"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Forgot Password ?"
+                    android:textColor="@color/lightTextColor"
+                    android:textSize="@dimen/_10ssp"
+                    android:visibility="gone" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/login_btn"
+                    android:layout_width="260dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tIL_Password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:backgroundTint="@color/white"
+                    android:elevation="@dimen/_5sdp"
+                    android:onClick="@{(v) -> LoginViewModel.onClick(v)}"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:stateListAnimator="@null"
+                    android:text="LOGIN"
+                    android:textColor="@color/dark_red_font_color"
+                    android:textSize="@dimen/_15sdp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/login_btn"
+                    android:layout_alignTop="@+id/login_btn"
+                    android:layout_alignEnd="@+id/login_btn"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:visibility="gone"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        app:srcCompat="@drawable/frgot_password" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:paddingTop="0dp"
+                        android:text="@string/forgot_your_password"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/txtAppVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="v 2.5"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</layout>
+
+    <!--
+            <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            tools:context=".LoginActivity">
+
+            <View
+                android:id="@+id/topView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/main_color"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:letterSpacing=".03"
+                    android:text="GDC"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_35ssp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:fontFamily="@font/robotolight"
+                    android:text="Genesys Data Collection"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/middleView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:background="@drawable/top_curve"
+                app:layout_constraintBottom_toTopOf="@+id/bottomView"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintTop_toTopOf="@+id/bottomView" />
+
+            <View
+                android:id="@+id/bottomView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.55"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_5sdp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toTopOf="@+id/bottomView"
+                app:layout_constraintTop_toTopOf="@+id/bottomView"
+                app:strokeColor="@color/lightTextColor"
+                app:strokeWidth="0dp"
+                tools:layout_editor_absoluteX="19dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:id="@+id/welcomeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_20ssp"
+                        android:fontFamily="@font/robotoregular"
+                        android:letterSpacing=".03"
+                        android:text="WELCOME!!"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/_20ssp" />
+
+                    &lt;!&ndash;    <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:layout_below="@+id/welcomeTxt"
+                            android:layout_marginStart="@dimen/_25sdp"
+                            android:layout_marginTop="@dimen/_35sdp"
+                            android:layout_marginEnd="@dimen/_25sdp"
+                            android:background="@drawable/edit_text_round"
+                            android:drawableStart="@drawable/username"
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:fontFamily="@font/robotoregular"
+                            android:hint="@string/hint_username"
+                            android:inputType="text"
+                            android:paddingLeft="26dp"
+                            android:paddingRight="26dp"
+                            android:textColor="@color/txt_dark_black" />
+            &ndash;&gt;
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tIL_Username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/welcomeTxt"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:background="@color/white"
+                        android:textColorHint="@color/lightTextColor"
+                        android:theme="@style/TextInputLayoutStyle"
+                        app:boxCornerRadiusBottomEnd="@dimen/_25sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_25sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_25sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_25sdp"
+                        app:hintTextColor="@color/lightTextColor">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/usernameEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/welcomeTxt"
+                            android:drawableStart="@drawable/username"
+                            android:drawablePadding="@dimen/_15sdp"
+                            android:fontFamily="@font/robotoregular"
+                            android:hint="@string/hint_username"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingRight="26dp"
+                            android:singleLine="true"
+                            android:text="@string/hint_username"
+                            android:textAppearance="@style/TextAppearance"
+                            android:textColor="@color/txt_dark_black"
+                            android:textColorHighlight="@color/lightTextColor"
+                            android:textColorHint="@color/lightTextColor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tIL_Password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tIL_Username"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:background="@color/white"
+                        android:textColorHint="@color/lightTextColor"
+                        android:theme="@style/TextInputLayoutStyle"
+                        app:boxCornerRadiusBottomEnd="@dimen/_25sdp"
+                        app:boxCornerRadiusBottomStart="@dimen/_25sdp"
+                        app:boxCornerRadiusTopEnd="@dimen/_25sdp"
+                        app:boxCornerRadiusTopStart="@dimen/_25sdp"
+
+                        app:hintTextColor="@color/lightTextColor"
+                        app:passwordToggleEnabled="true">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/passwordEt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/welcomeTxt"
+                            android:drawableStart="@drawable/baseline_password"
+                            android:drawablePadding="@dimen/_15sdp"
+                            android:fontFamily="@font/robotoregular"
+                            android:hint="@string/hint_password"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingRight="26dp"
+                            android:singleLine="true"
+                            android:text="@string/hint_username"
+                            android:textAppearance="@style/TextAppearance"
+                            android:textColor="@color/txt_dark_black"
+                            android:textColorHighlight="@color/lightTextColor"
+                            android:textColorHint="@color/lightTextColor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/forgotPassTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tIL_Password"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_30sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Forgot Password ?"
+                        android:textColor="@color/main_color"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/forgotPassTxt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:backgroundTint="@color/main_color"
+                        android:paddingStart="@dimen/_50sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_50sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:text="LOGIN"
+                        android:textSize="@dimen/_15sdp" />
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_91sdp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/sample_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            -->

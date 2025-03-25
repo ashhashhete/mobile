@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/_15sdp"
+        tools:context=".ui.login.LoginActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_color"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/topView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/main_color" />
+
+            <ImageView
+                android:id="@+id/middleView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/top_curve" />
+
+            <View
+                android:id="@+id/bottomView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:background="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_10sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotobold"
+                android:letterSpacing=".03"
+                android:text="@string/gdc"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_35ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/robotolight"
+                android:text="@string/genesys_data_collection"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll1"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:backgroundTint="@color/white"
+            app:cardCornerRadius="@dimen/_10sdp"
+            app:cardElevation="@dimen/_5sdp"
+            app:cardUseCompatPadding="true"
+            app:strokeColor="@color/dashoardBoarder"
+            app:strokeWidth="@dimen/_1sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/welcomeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:fontFamily="@font/robotoregular"
+                    android:gravity="center"
+                    android:lineSpacingExtra="3sp"
+                    android:text="Welcome Back\nUser!!"
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/_25ssp" />
+
+                <CheckBox
+                    android:id="@+id/offlineCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcomeTxt"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="If you wish to load the offline maps, please select the checkbox."
+                    android:textColor="@color/main_color"
+                    android:textSize="@dimen/_8ssp" />
+
+                <!--    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_below="@+id/welcomeTxt"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_35sdp"
+                        android:layout_marginEnd="@dimen/_25sdp"
+                        android:background="@drawable/edit_text_round"
+                        android:drawableStart="@drawable/username"
+                        android:drawablePadding="@dimen/_5sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:hint="@string/hint_username"
+                        android:inputType="text"
+                        android:paddingLeft="26dp"
+                        android:paddingRight="26dp"
+                        android:textColor="@color/txt_dark_black" />
+    -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tIL_GridLayout"
+                    style="@style/MyDenseOutlinedDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/offlineCheckBox"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@color/white"
+                    android:textColorHint="@color/lightTextColor"
+                    android:theme="@style/TextInputLayoutStyle"
+                    app:boxCornerRadiusBottomEnd="@dimen/_25sdp"
+                    app:boxCornerRadiusBottomStart="@dimen/_25sdp"
+                    app:boxCornerRadiusTopEnd="@dimen/_25sdp"
+                    app:boxCornerRadiusTopStart="@dimen/_25sdp"
+                    app:hintTextColor="@color/lightTextColor">
+
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/autoCompleteGridLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/welcomeTxt"
+                        android:drawableStart="@drawable/gridlayout"
+                        android:drawablePadding="@dimen/_15sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:hint="@string/hint_selectCluster"
+                        android:imeOptions="actionNext"
+                        android:inputType="none"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:paddingRight="26dp"
+                        android:singleLine="true"
+                        android:textAppearance="@style/TextAppearance"
+                        android:textColor="@color/lightTextColor"
+                        android:textColorHighlight="@color/lightTextColor"
+                        android:textColorHint="@color/lightTextColor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tIL_GridLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:backgroundTint="@color/main_color"
+                    android:elevation="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_50sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_50sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:stateListAnimator="@null"
+                    android:text="GO"
+                    android:textSize="@dimen/_15sdp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/sampleImage"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_128sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/sample_image"
+            android:paddingBottom="@dimen/_20sdp"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/txtAppVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_15sdp"
+            android:text="v 2.5"
+            android:textColor="@color/main_color" />
+    </RelativeLayout>
+
+</layout>

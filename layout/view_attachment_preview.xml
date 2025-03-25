@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_1sdp"
+    app:cardBackgroundColor="#367E7E7E"
+    app:cardCornerRadius="@dimen/_5sdp"
+    app:cardElevation="@dimen/_1sdp"
+    app:cardPreventCornerOverlap="true"
+    app:strokeColor="@color/lightTextColor"
+    app:strokeWidth="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/img_close"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_toStartOf="@+id/img_close"
+            android:gravity="center_vertical"
+            android:text="@string/name"
+            android:textColor="@color/txt_dark_black"
+            android:textSize="@dimen/_8ssp" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/baseline_close_24" />
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/attachmentPreviewIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_15sdp" />
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
+

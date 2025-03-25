@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <data>-->
+
+<!--        <variable-->
+<!--            name="mapViewModel"-->
+<!--            type="com.igenesys.view.StructureViewModel" />-->
+<!--    </data>-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context="com.igenesys.StructureActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Structure Details"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20ssp" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hut_id_number_txt"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg" />
+
+            <EditText
+                android:id="@+id/et_surveyUniqueIdNumber"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/rounded_edittext"
+                android:backgroundTint="@color/fixEditTextColor"
+                android:editable="false"
+                android:text="DRP/GN/ZO5/0001"
+                android:focusable="false"
+                android:singleLine="true" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total_number_of_floor_txt"
+                android:textColor="@color/darkTextColor"
+                android:drawableEnd="@drawable/red_asterisk_svg"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompUnitFloorDetails"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="none"
+                android:singleLine="true" />
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layout_bottomShadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1ssp"
+        android:layout_above="@+id/layout_bottomBtn"
+        android:layout_marginBottom="@dimen/_1sdp"
+        app:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/_2sdp"
+        app:cardPreventCornerOverlap="true"
+        app:strokeColor="@color/lightTextColor"
+        app:strokeWidth="0dp" />
+
+    <LinearLayout
+        android:id="@+id/layout_bottomBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/_10sdp"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_10sdp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_Cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_rectangle"
+            android:elevation="@dimen/_10sdp"
+            android:padding="12dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_weight="1"
+            android:background="@drawable/button_rectangle"
+            android:backgroundTint="@color/main_color"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/txt_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:src="@drawable/svg_arrow_forward" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_2sdp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:id="@+id/lt_member_name"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/red_asterisk_svg"
+            android:drawablePadding="10dp"
+            android:text="Name of the member"
+            android:textColor="@color/darkTextColor" />
+
+        <EditText
+            android:id="@+id/et_name_of_member"
+            style="@style/MyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/rounded_edittext"
+            android:singleLine="true"
+            android:text="" />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/lt_member_phone"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:drawableEnd="@drawable/red_asterisk_svg"
+        android:drawablePadding="10dp"
+        android:text="Contact Number of the member"
+        android:textColor="@color/darkTextColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <EditText
+            style="@style/MyEditText"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/fixEditTextColor"
+            android:editable="false"
+            android:focusable="false"
+            android:singleLine="true"
+            android:text="+91" />
+
+
+        <EditText
+            android:id="@+id/et_member_contact_no"
+            style="@style/MyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

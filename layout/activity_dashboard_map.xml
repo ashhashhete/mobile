@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="dashboardMapViewModel"
+            type="com.igenesys.view.DashboardMapViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.igenesys.DashboardMapActivity">
+
+        <include
+            android:id="@+id/common_header"
+            layout="@layout/common_header" />
+
+        <include
+            android:id="@+id/appBarMain"
+            layout="@layout/app_bar_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/common_header" />
+
+    </RelativeLayout>
+</layout>

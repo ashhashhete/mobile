@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/thumb_expression_header_tv"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:gravity="center|left"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:id="@+id/backBtnThumbImpression"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back"
+            android:layout_height="@dimen/_30sdp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thumb_impression_title"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/formLineNextColor" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/red_asterisk_svg"
+        android:text="Possessor/Owner/Respondant Availability" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/thumb_impression_hoh_yes_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:text="@string/yesBtn" />
+
+        <RadioButton
+            android:id="@+id/thumb_impression_hoh_no_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noBtn" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layThumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/thumb_et"
+            style="@style/MyEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_edittext"
+            android:backgroundTint="@color/status_light_green"
+            android:editable="false"
+            android:focusable="false"
+            android:singleLine="true"
+            android:text="@string/thumb_impression_title" />
+
+        <Button
+            android:id="@+id/thumb_impression_attach_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textStyle="normal"
+            app:cornerRadius="4dp"
+            app:icon="@drawable/attach_file_"
+            app:iconPadding="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layRem"
+            android:visibility="gone"
+    android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/enter_mob_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:drawableEnd="@drawable/red_asterisk_svg"
+        android:text="@string/Remarks" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/thumb_remarks_auto_comp"
+        style="@style/MyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableEnd="@drawable/svg_keyboard_arrow_down_24"
+        android:inputType="none"
+        android:singleLine="true"
+        android:text="" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/thumb_pic_items_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+       >
+
+        <ImageView
+            android:id="@+id/thumb_pic_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:foregroundGravity="right"
+            />
+
+        <ImageView
+            android:id="@+id/del_thumb_pic_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            app:srcCompat="@drawable/del_icon"
+             />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:id="@+id/imageRecyclerDeleteThumb"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_height="80dp"
+        android:scrollbars="vertical"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/thumb_continue_btn"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_text"
+            android:textStyle="normal"
+            app:cornerRadius="4dp" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

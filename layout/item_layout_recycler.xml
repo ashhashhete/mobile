@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/videoLayout"
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <VideoView
+            android:visibility="gone"
+            android:id="@+id/videoviewid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_play"
+            android:background="@null"
+            android:visibility="visible"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="00:00"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBarVideo"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/videoviewid"
+            android:src="@drawable/del_icon"
+            android:id="@+id/delVideoView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:id="@+id/imageLayout"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imageviewid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_place"
+            />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/imageviewid"
+            android:src="@drawable/del_icon"
+            android:id="@+id/delImageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

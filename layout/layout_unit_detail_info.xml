@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <data>-->
+
+<!--        <variable-->
+<!--            name="mapViewModel"-->
+<!--            type="com.techaidsolution.igenesys.ui.form.FormPageViewModel" />-->
+<!--    </data>-->
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/_15sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/autoCompUnitFloorDetails"
+                android:textColor="@color/darkTextColor" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompUnitFloorDetails"
+                style="@style/MyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableEnd="@drawable/svg_keyboard_arrow_down_24"
+                android:inputType="none"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/autoCompUnitNumber"
+                android:textColor="@color/darkTextColor" />
+
+            <EditText
+                android:id="@+id/et_UnitNumber"
+                style="@style/MyEditText"
+                android:maxLength="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:background="@drawable/rounded_edittext"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/txtMemberAvailable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/member_availability"
+                android:textColor="@color/darkTextColor" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupMemberAvailable"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radio_memberAvailable_Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="Yes" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radio_memberAvailable_No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:text="No" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text="B"
+                    android:visibility="invisible" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/llayout_unit_detailRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/Remarks"
+                    android:textColor="@color/darkTextColor" />
+
+                <EditText
+                    android:id="@+id/et_Remarks"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_unit_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtUnitStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/unitStatus"
+                    android:textColor="@color/darkTextColor" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_unitStatus_rentOwner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/radio_unitStatus_rent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:text="Rent" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/radio_unitStatus_ownership"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:text="Ownership" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="B"
+                        android:visibility="invisible" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Total Number of Members"
+                    android:textColor="@color/darkTextColor" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompNoOfMembers"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableEnd="@drawable/svg_keyboard_arrow_down_24"
+                    android:inputType="none"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/txt_unitUsage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Structure Usage (Unit Usage)"
+                    android:textColor="@color/darkTextColor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/radio_unitUsageResidential"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:text="Residential" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/radio_unitUsageCommercial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="Commercial" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/radio_unitUsageRC"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="RC" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/radio_unitUsageReligious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:text="Religious" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:id="@+id/radio_unitUsageOthers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="Others" />
+
+                    <com.google.android.material.radiobutton.MaterialRadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:text="itiiiii"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_area_sq_ft"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/area_sq_ft"
+                    android:textColor="@color/darkTextColor" />
+
+                <EditText
+                    android:id="@+id/et_area_sq_ft"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:inputType="numberDecimal"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:id="@+id/lay_CommercialArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Commercial Area (Sq. m)"
+                        android:textColor="@color/darkTextColor" />
+
+                    <EditText
+                        android:id="@+id/et_area_commercial_ft"
+                        style="@style/MyEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:background="@drawable/rounded_edittext"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/existenceSince"
+                    android:textColor="@color/darkTextColor" />
+
+                <EditText
+                    android:id="@+id/et_existenceSince"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:drawableEnd="@drawable/svg_icon_calendar"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Year of Structure"
+                    android:textColor="@color/darkTextColor" />
+
+                <EditText
+                    android:id="@+id/et_YearOfStructure"
+                    style="@style/MyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:backgroundTint="@color/fixEditTextColor"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:singleLine="true" />
+
+                <LinearLayout
+                    android:id="@+id/lay_ResidentProof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Attachment of Resident Proof (Minimum  2) "
+                        android:textColor="@color/darkTextColor" />
+
+                    <include
+                        android:id="@+id/resident_sc_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/resident_ecb_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/resident_photoPass_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/resident_naTax_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/resident_ptpr_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/resident_er_attachment"
+                        layout="@layout/common_add_attachment" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_ResidentProofAdditionalDocument"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Additional Document (Minimum  2) "
+                        android:textColor="@color/darkTextColor" />
+
+                    <include
+                        android:id="@+id/additional_sccsas_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/additional_ciesa_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/additional_attachment3_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/additional_attachment4_attachment"
+                        layout="@layout/common_add_attachment" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_ResidentProofChainDocument"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Chain Document (Minimum  1) "
+                        android:textColor="@color/darkTextColor" />
+
+                    <include
+                        android:id="@+id/chain_psipc_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/chain_ra_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/chain_attachment3_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/chain_attachment4_attachment"
+                        layout="@layout/common_add_attachment" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_CommercialLicenseProof"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Licence Proof (Minimum  1) "
+                        android:textColor="@color/darkTextColor" />
+
+                    <include
+                        android:id="@+id/licenseProof_se_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/licenseProof_rhl_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/licenseProof_fdl_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/licenseProof_fal_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/licenseProof_aos_attachment"
+                        layout="@layout/common_add_attachment"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_ReligiousOther"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txtHeaderReligiousOtherProof"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:text="Licence Proof (Minimum  1) "
+                        android:textColor="@color/darkTextColor" />
+
+                    <include
+                        android:id="@+id/religiousOther_a1_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/religiousOther_a2_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/religiousOther_a3_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                    <include
+                        android:id="@+id/religiousOther_a4_attachment"
+                        layout="@layout/common_add_attachment" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_35sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txt_memberDetails"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/robotobold"
+                        android:gravity="center_vertical"
+                        android:text="Member Details"
+                        android:textColor="@color/darkTextColor"
+                        android:textSize="@dimen/_20sdp"
+                        android:visibility="invisible" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_AddMember"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:backgroundTint="@color/main_color"
+                        android:elevation="@dimen/_3sdp"
+                        android:paddingStart="@dimen/_15sdp"
+                        android:paddingTop="12dp"
+                        android:paddingEnd="@dimen/_15sdp"
+                        android:paddingBottom="12dp"
+                        android:stateListAnimator="@null"
+                        android:text="Add Member"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/_12ssp"
+                        app:cornerRadius="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llayout_addNewmember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <include
+                        android:id="@+id/layout_add_member"
+                        layout="@layout/layout_add_member"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/expandableLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:background="@drawable/rounded_edittext"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Members added :"
+                        android:textColor="@color/darkTextColor"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <com.igenesys.utils.CustomExpandableListview
+                        android:id="@+id/expandableListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@android:color/darker_gray"
+                        android:dividerHeight="0.0dp"
+                        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+                        android:nestedScrollingEnabled="true"
+                        android:paddingBottom="@dimen/_10sdp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>
