@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:left="-100dp"
+        android:right="-100dp"
+        android:top="0dp"
+        android:bottom="-80dp">
+
+        <shape android:shape="oval">
+            <solid
+                android:color="#FFFFFA" />
+        </shape>
+    </item>
+
+
+</layer-list>
+    <!--
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/white" />
+        <corners
+            android:topRightRadius="@dimen/_25sdp"
+            android:topLeftRadius="@dimen/_25sdp" />
+    </shape>
+
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:aapt="http://schemas.android.com/aapt"
+        android:width="520dp"
+        android:height="106.3dp"
+        android:viewportWidth="520"
+        android:viewportHeight="106.3">
+        <group>
+            <clip-path android:pathData="M520 53.1513C520 82.5059 403.594 106.303 260 106.303C116.406 106.303 0 82.5059 0 53.1513C0 23.7966 116.406 0 260 0C403.594 0 520 23.7966 520 53.1513Z" />
+            <path
+                android:fillColor="@color/white"
+                android:pathData="M0 0V106.303H520V0" />
+        </group>
+    </vector>
+
+
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="oval">
+        <solid android:color="@color/white" />
+        <size
+            android:width="@dimen/_100sdp"
+            android:height="@dimen/_60sdp" />
+    </shape>
+    -->
