@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white75per">#E6FFFFFF</color>
+    <color name="tranparent">#00FBFBFB</color>
+
+    <color name="main_color">#0075C9</color>
+    <color name="main_color21">#D5E7E7</color>
+    <color name="lightTextColor">#898989</color>
+    <color name="darkTextColor">#49454F</color>
+    <color name="dashoardBoarder">#CCCCCC</color>
+    <color name="gray_text_color">#707070</color>
+
+    <color name="summaryEditBoarderColor">#0075C9</color>
+    <color name="inProgressBoarderColor">#FFFF00</color>
+
+    <color name="completeBoarderColor">#38A800</color>
+    <color name="notStartedBoarderColor">#9C9C9C</color>
+    <color name="onHoldBoarderColor">#FFAA00</color>
+
+
+<!--    <color name="completeBoarderColor">#179557</color>-->
+<!--    <color name="notStartedBoarderColor">#D69500</color>-->
+<!--    <color name="onHoldBoarderColor">#C93536</color>-->
+
+<!--    <color name="inProgressBoarderColor">#367CFF</color>-->
+<!--    <color name="completeBoarderColor">#1C9508</color>-->
+<!--    <color name="notStartedBoarderColor">#C80000</color>-->
+<!--    <color name="onHoldBoarderColor">#FD6A00</color>-->
+    <color name="summaryChildColor">#F7F7F7</color>
+
+    <color name="lightGreyColor">#C4C4C4</color>
+    <color name="txt_dark_black">#000000</color>
+    <color name="offlineBack">#787878</color>
+    <color name="identifyItemBack">#F2F2F2</color>
+    <color name="textBoxesBorder">#DDDDDD</color>
+    <color name="formLineNextColor">#B7B7B7</color>
+
+    <color name="blueColor">#242cac</color>
+    <color name="yelloBright">#FFFF00</color>
+
+    <color name="colorGray">#8F8F8F</color>
+    <color name="fixEditTextColor">#E2F4F6</color>
+
+    <color name="lighter_black">#393939</color>
+    <color name="lighter_red">#c23823</color>
+
+    <color name="status_dark_green">#14BA6D</color>
+    <color name="status_light_green">#ECFDF3</color>
+
+    <color name="status_dark_red">#C93536</color>
+    <color name="status_light_red">#FFE4E4</color>
+
+    <color name="status_dark_orange">#EE8A10</color>
+    <color name="status_light_orange">#FFE4D8</color>
+
+    <color name="status_dark_blue">#3D9BD2</color>
+    <color name="status_light_blue">#E8F6FF</color>
+
+<!--    new color-->
+    <color name="notStartedGridColor">#9C9C9C</color>
+    <color name="onHoldGridColor">#FFAA00</color>
+<!--    <color name="notStartedGridColor">#D69500</color>-->
+<!--    <color name="onHoldGridColor">#C93536</color>-->
+    <color name="dark_blue_theme">#0B74B0</color>
+    <color name="dark_voilet_theme">#862B91</color>
+    <color name="dark_red_font_color">#BA3865</color>
+    <color name="dark_light_blue">#5C67AC</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/white</color>
+</resources>

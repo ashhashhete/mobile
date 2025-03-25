@@ -1,0 +1,266 @@
+<resources>
+
+    <string name="app_name">DRP</string>
+    <string name="hint_username">Enter Username</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="notWorkingInternet">Whoops! It seems like your internet connection is currently unavailable. Please check your network settings and try again.</string>
+    <string name="hint_selectCluster">Select Work Area</string>
+    <string name="residential_proof_2_post_2011">Proof of Chain of Agreement</string>
+    <string name="residential_proof_3_post_2011">Proof of any other document</string>
+    <string name="commercial_proof_1">Proof of License</string>
+    <string name="ok">Okay</string>
+    <string name="cancel">Cancel</string>
+    <string name="autoDateTimeNotEnabled">Auto date/time or time zone are not enabled. Please go to settings to enable it.</string>
+    <string name="transparent_level">Transparent Level</string>
+    <string name="alert">ALERT !</string>
+    <string name="pleaseGrantPermission">Please grant these permissions.</string>
+    <string name="permissionRequiredToDoTask">Camera, Location, Read and Write External Storage permissions are required to do the task.</string>
+    <string name="tenementNumber">Tenement Number</string>
+    <!--    <string name="genesys_data_collection">Genesys Data Collection</string>-->
+    <string name="genesys_data_collection">Dharavi Redevelopment Project Survey</string>
+    <string name="gdc">DRP</string>
+    <string name="welcome">WELCOME!!</string>
+    <string name="autoCompUnitFloorDetails">Unit Details</string>
+    <string name="autoCompUnitNumber">Unit Number</string>
+    <string name="area_sq_ft">Area (Sq. m)</string>
+    <string name="member_availability">Availability of the Resident/Possessor/Owner</string>
+    <!--    <string name="other_usage">Other Usage</string>-->
+    <string name="other_usage">Type of other structure</string>
+    <string name="unitStatus">Unit Status</string>
+    <string name="existenceSince">Existence Since (Year)</string>
+    <string name="Remarks">Remarks</string>
+    <string name="name">Name</string>
+    <string name="struct_lock_error_msg">Structure locked you cannot edit completed structure!</string>
+    <string name="struct_lock_error_msg_unit">Structure locked you cannot add new unit in completed structure!</string>
+    <string name="close_form_msg">Your recently filled data will be lost. Are you sure?</string>
+
+
+    <string name="readWritePermissionRequired">Read and Write External Storage permissions are required to do the task.</string>
+
+    <string name="member_Type">Member Type</string>
+    <string name="autoCompMaritalStatus">Marital Status</string>
+    <string name="spouseName">Spouse Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="upload_document">Upload Document</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+
+    <string name="ask_logout">Are you sure you want to logout?</string>
+    <string name="yesBtn">Yes</string>
+    <string name="noBtn">No</string>
+    <string name="enter_string_to_search">Enter input to search</string>
+
+    //Rohit
+    <array name="details_structure">
+        <item>SURVEYOR</item>
+        <item>UNIT</item>
+        <item>HOH</item>
+        <item>MEMBER</item>
+    </array>
+
+
+    //Rohit
+    <string name="hut_id_number_txt">Hut ID Number</string>
+    <string name="total_number_of_floor_txt">No. of Floors</string>
+    <string name="name_surveyor_txt">Name of the Surveyor</string>
+    <string name="designation_surveyor_txt">Designation of the Surveyor</string>
+    <string name="name_drp_txt">Name of the DRP Surveyor</string>
+    <string name="des_drp_txt">Designation of the DRP Surveyor</string>
+    <string name="date_of_survey_txt">Date of Survey</string>
+    <string name="time_of_survey_txt">Time of Survey</string>
+
+    <string name="unique_id_no_txt">Unique ID Number</string>
+    <string name="count_past_visit_txt">Count of the past visit</string>
+    <string name="area_name_txt">Name of the Area</string>
+    <string name="ward_no_txt">Ward No.</string>
+    <string name="sector_no_txt">Sector No.</string>
+    <string name="zone_no_txt">Zone No.</string>
+    <string name="nagar_name_txt">Name of the Nagar</string>
+    <string name="society_name_txt">Name of Society</string>
+    <string name="street_name_txt">Street/Road Name</string>
+    <string name="landmark_txt">Landmark</string>
+    <string name="name_respondent_txt">Name of the Resident/Possessor/Owner</string>
+    <string name="contact_respondent_txt">Mob of the Resident/Possessor/Owner</string>
+    <string name="dob_respondent_txt">Date of birth of the Resident/Possessor/Owner</string>
+    <string name="age_respondent_txt">Age of the Resident/Possessor/Owner</string>
+    <string name="contact_HOH_txt">Contact Number of HOH</string>
+    <string name="respondent_relation_txt">Relationship with HOH</string>
+    <string name="usage_txt">Usage</string>
+    <string name="doc_used_tenement_txt">Document used for Tenement Number</string>
+    <string name="mashal_txt">Mashal Survey No.</string>
+    <string name="ownership_txt">Ownership Status</string>
+    <string name="area_unit_txt">Area of the unit (in sq.ft) (using distometer)</string>
+    <string name="loft_txt">Is the Loft present?</string>
+    <string name="area_loft_txt">Area of loft (in sq.ft) (using distometer)</string>
+
+
+    <string name="relation_emp_txt">Relationship with Owner/Employer</string>
+    <string name="contact_owner_txt">Contact Number of Owner/Employer</string>
+    <string name="area_gomasta_txt">Area from gumasta (in sq.ft)</string>
+
+    <string name="residential_proof_1">Proof of Structure</string>
+    <string name="continue_text">Continue</string>
+    <string name="number_of_spouse_of_the_member">Number of Spouse of the member</string>
+    <!--    <string name="residential_proof_1">Residential Proof 1</string>-->
+    <string name="allowed_char_one">0,1,2,3,4,5,6,7,8,9,abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQRSTUVWXYZ,/, ,-,</string>
+    <string name="allowed_num_char_only">0,1,2,3,4,5,6,7,8,9,abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQRSTUVWXYZ,., ,</string>
+    <string name="allowed_only_text">abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQRSTUVWXYZ, ,</string>
+    <string name="allowed_char_editText">0,1,2,3,4,5,6,7,8,9,abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQRSTUVWXYZ, ,‐,#,&amp;,(,), </string>
+    <string name="allowed_char_special_editText">abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQRSTUVWXYZ, ,‐,#,&amp;,(,), </string>
+    <string name="allowed_char_editText_n">0,1,2,3,4,5,6,7,8,9,abcdefghijklmnopqrstuvwxyz,ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <string name="aadhar_validations">The Aadhar number should be 12 digits long</string>
+    <string name="mandatory_field">Field is mandatory</string>
+    <string name="remove_numbers">Please remove any special characters or numbers</string>
+    <string name="pan_validations">Please add valid PAN number</string>
+    <string name="rationCard_validations">Enetr alpha numeric value upto 13 digits</string>
+    <string name="enter_pan_card_number">PAN No.</string>
+    <string name="spouse_name_of_the_member">Spouse Name of the Member</string>
+    <string name="staying_with_family_or_as_individual">Staying with Family or as Individual</string>
+    <string name="place_of_work">Place of work</string>
+    <string name="finish_txt">Finish</string>
+    <string name="member_added">Member Added:</string>
+    <string name="relationship_with_hoh_owner_employer">Relationship with HOH/Owner/Employer</string>
+    <string name="name_of_the_member">Name of the member</string>
+    <string name="contact_number_of_the_member">Contact Number of the member</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="attachment_of_aadhar_card">Attachment of Aadhar Card</string>
+    <string name="attachment_of_pan_card">Attachment of Pan card</string>
+    <string name="colour_of_the_ration_card">Colour of the Ration Card</string>
+    <string name="ration_card_number">Ration Card Number</string>
+    <string name="monthly_income">Monthly Income</string>
+    <string name="school_college_location">School/College location</string>
+    <string name="whether_divyang_or_with_critical_disease">Whether Divyang or with critical disease</string>
+    <string name="type_of_vehicle_owned_or_driven_daily_which_is_parked_in_dharavi">Type of vehicle owned or driven daily which is parked in Dharavi</string>
+    <string name="enter_aadhar_card_number">Aadhar No.</string>
+
+    <string name="gender_validations">Please select gender</string>
+    <string name="divyangOption_validations">Please attach Divyang/Disease certificate</string>
+    <string name="deathOption_validations">Please attach Death certificate</string>
+    <string name="adharhOption_validations">Please attach Adhar card</string>
+    <string name="panOption_validations">Please attach PAN card</string>
+    <!--    hoh screen -->
+    <string name="residential_name">Name of the HOH</string>
+    <string name="residential_contact">Contact Number of the HOH</string>
+    <string name="residential_spouse_name">Spouse Name of the HOH</string>
+    <string name="residential_spouse_no">Number of Spouse of the HOH</string>
+
+    <string name="Aadhar_Card_No">Aadhar Card No.</string>
+    <string name="pan_Card_No">Pan Card No.</string>
+    <string name="ration_Card_color">Colour of the Ration Card</string>
+
+    <string name="annexure_document">Annexure Documents</string>
+    <string name="hoh_avail_title">HOH Availability</string>
+    <string name="annexure_a_title">Annexure A Self Declaration</string>
+    <string name="annexure_b_title">Self-Attestation Declaration (Annexure B)</string>
+    <string name="individual">Individual</string>
+
+    <string name="completed_status">Completed</string>
+    <string name="dispute_status">Dispute</string>
+    <string name="in_progress_status">In Progress</string>
+    <string name="on_hold_status">On Hold</string>
+    <string name="unit_distometer_video">Distometer</string>
+    <string name="img_ext_txt">Only JPEG and PDF files with max size of 10 MB</string>
+    <string name="video_ext_txt">Only mp4,mkv, mov, wmv, flv files are allowed</string>
+
+    <string name="thumb_impression_title">Thumb Impression</string>
+    <string name="hoh_available">HOH Availability</string>
+    <string name="thumb_right_place_msg">Place your right thumb on the sensor to generate thumb impression</string>
+    <string name="no_attachment_text">Add a record to view the attachments</string>
+    <string name="no_cluster_text">Add a record to view the Survey List</string>
+
+    <string name="MORPHO_OK">No error.</string>
+    <string name="MORPHOERR_INTERNAL">Biometrics device performed an internal error.</string>
+    <string name="MORPHOERR_PROTOCOLE">Communication protocole error.</string>
+    <string name="MORPHOERR_CONNECT">Can not connect biometrics device.</string>
+    <string name="MORPHOERR_CLOSE_COM">Error while closing communication port.</string>
+    <string name="MORPHOERR_BADPARAMETER">Invalid parameter.</string>
+    <string name="MORPHOERR_MEMORY_PC">Not enough memory (in the PC).</string>
+    <string name="MORPHOERR_MEMORY_DEVICE">Not enough memory for the creation of a database in the MSO.</string>
+    <string name="MORPHOERR_NO_HIT">Authentication or Identification failed.</string>
+    <string name="MORPHOERR_STATUS">MSO returned an unknown status error.</string>
+    <string name="MORPHOERR_DB_FULL">The database is full.</string>
+    <string name="MORPHOERR_DB_EMPTY">The database is empty.</string>
+    <string name="MORPHOERR_ALREADY_ENROLLED">User has already been enrolled.</string>
+    <string name="MORPHOERR_BASE_NOT_FOUND">The specified base does not exist.</string>
+    <string name="MORPHOERR_BASE_ALREADY_EXISTS">The specified base already exist.</string>
+    <string name="MORPHOERR_NO_ASSOCIATED_DB">User object has been instanciated without C_MORPHO_Database::GetUser.</string>
+    <string name="MORPHOERR_NO_ASSOCIATED_DEVICE">Database object has been instanciated without C_MORPHO_Device::GetDatabase.</string>
+    <string name="MORPHOERR_INVALID_TEMPLATE">The template is not valid.</string>
+    <string name="MORPHOERR_NOT_IMPLEMENTED">Command not yet implemented in this release.</string>
+    <string name="MORPHOERR_TIMEOUT">No response after defined time.</string>
+    <string name="MORPHOERR_NO_REGISTERED_TEMPLATE">No templates have been registered.</string>
+    <string name="MORPHOERR_FIELD_NOT_FOUND">Field does not exist.</string>
+    <string name="MORPHOERR_CORRUPTED_CLASS">Class has been corrupted.</string>
+    <string name="MORPHOERR_TO_MANY_TEMPLATE">There are too many templates.</string>
+    <string name="MORPHOERR_TO_MANY_FIELD">There are too many fields.</string>
+    <string name="MORPHOERR_MIXED_TEMPLATE">Templates with differents formats are mixed.</string>
+    <string name="MORPHOERR_CMDE_ABORTED">Command has been aborted.</string>
+    <string name="MORPHOERR_INVALID_PK_FORMAT">Invalid PK format.</string>
+    <string name="MORPHOERR_SAME_FINGER">User gave twice the same finger.</string>
+    <string name="MORPHOERR_OUT_OF_FIELD">The number of the additional field is more than 128.</string>
+    <string name="MORPHOERR_INVALID_USER_ID">UserID is not valid.</string>
+    <string name="MORPHOERR_INVALID_USER_DATA">The user data are not valid.</string>
+    <string name="MORPHOERR_FIELD_INVALID">Additional field name length is more than MORPHO_FIELD_NAME_LEN.</string>
+    <string name="MORPHOERR_USER_NOT_FOUND">User is not found.</string>
+    <string name="MORPHOERR_COM_NOT_OPEN">Serial COM has not been opened.</string>
+    <string name="MORPHOERR_ELT_ALREADY_PRESENT">This element is already present in the list.</string>
+    <string name="MORPHOERR_NOCALLTO_DBQUERRYFIRST">You have to call C_MORPHO_Database::DbQueryFirst to initialize the querry.</string>
+    <string name="MORPHOERR_USER">The communication callback functions returns error between -10000 and -10499.</string>
+    <string name="MORPHOERR_BAD_COMPRESSION">The Compression is not valid.</string>
+    <string name="MORPHOERR_SECU">Security error.</string>
+    <string name="MORPHOERR_CERTIF_UNKNOW">The MSO has not the certificate necessary to verify the signature.</string>
+    <string name="MORPHOERR_INVALID_CLASS">The class has been destroyed.</string>
+    <string name="MORPHOERR_USB_DEVICE_NAME_UNKNOWN">The specified Usb device is not plugged.</string>
+    <string name="MORPHOERR_CERTIF_INVALID">The certificate is not valid.</string>
+    <string name="MORPHOERR_SIGNER_ID">The certificate identity is not the same than the X984 certificate identity.</string>
+    <string name="MORPHOERR_SIGNER_ID_INVALID">The X984 certificate identity size is different to 20 octets (SHA_1 size).</string>
+    <string name="MORPHOERR_FFD">False Finger Detected.</string>
+    <string name="MORPHOERR_MOIST_FINGER">The finger can be too moist or the scanner is wet.</string>
+    <string name="MORPHOERR_NO_SERVER">The Morpho MorphoSmart Service Provider Usb Server is stopped or not installed.</string>
+    <string name="MORPHOERR_OTP_NOT_INITIALIZED">No parameter has been initialized.</string>
+    <string name="MORPHOERR_OTP_PIN_NEEDED">Code pin is needed : it is the first enrollment.</string>
+    <string name="MORPHOERR_OTP_REENROLL_NOT_ALLOWED">User is not allowed to be reenrolled.</string>
+    <string name="MORPHOERR_OTP_ENROLL_FAILED">Enrollment failed.</string>
+    <string name="MORPHOERR_OTP_IDENT_FAILED">Identification failed.</string>
+    <string name="MORPHOERR_NO_MORE_OTP">No more OTP available (sequence number = 0).</string>
+    <string name="MORPHOERR_OTP_NO_HIT">Authentication or Identification failed.</string>
+    <string name="MORPHOERR_OTP_ENROLL_NEEDED">Enrollment needed before generating OTP.</string>
+    <string name="MORPHOERR_DEVICE_LOCKED">The device is locked.</string>
+    <string name="MORPHOERR_DEVICE_NOT_LOCK">The device is not locked.</string>
+    <string name="MORPHOERR_OTP_LOCK_GEN_OTP">ILV_OTP_GENERATE Locked.</string>
+    <string name="MORPHOERR_OTP_LOCK_SET_PARAM">ILV_OTP_SET_PARAMETERS  Locked.</string>
+    <string name="MORPHOERR_OTP_LOCK_ENROLL">ILV_OTP_ENROLL_USER Locked.</string>
+    <string name="MORPHOERR_FVP_MINUTIAE_SECURITY_MISMATCH">Security level mismatch: attempt to match fingerprint template in high security level (MorphoSmart FINGER VP only).</string>
+    <string name="MORPHOERR_FVP_FINGER_MISPLACED_OR_WITHDRAWN">Misplaced or withdrawn finger has been detected during acquisition (MorphoSmart FINGER VP only).</string>
+    <string name="MORPHOERR_LICENSE_MISSING">A required license is missing.</string>
+    <string name="MORPHOERR_CANT_GRAN_PERMISSION_USB">Could not grant permissions to USB</string>
+    <string name="access_txt">Access to the unit</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="continue_cap_text">CONTINUE</string>
+    <string name="notice_att_txt">Attachment of the notice on door (Minimum 1)</string>
+    <string name="unit_unique_att_txt">Attachment of the unit unique id</string>
+    <string name="res_area_txt">Area (Residential) (in sq.ft)</string>
+    <string name="comm_area_txt">Area (Commercial) (in sq.ft)</string>
+
+    <array name="progressbar_step">
+        <item>UNIT</item>
+        <item>HOH</item>
+        <item>MEMBER</item>
+        <item>MEDIA</item>
+    </array>
+
+<!--    dev -->
+    <string name="oauth_redirect_host">https://oystermap.com</string>
+
+<!--    stage-->
+<!--    <string name="oauth_redirect_host">https://oystermap.com</string>-->
+
+<!--    live-->
+<!--    <string name="oauth_redirect_host">https://oystermap.com</string>-->
+
+    <string name="name_of_structure">Name of the structure</string>
+    <string name="diety_txt">Type of Diety</string>
+    <string name="diety_name_txt">Name of Diety</string>
+
+</resources>

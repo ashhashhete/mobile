@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <string-array name="noOfFloorList">-->
+<!--        <item>G</item>-->
+<!--        <item>01</item>-->
+<!--        <item>02</item>-->
+<!--        <item>03</item>-->
+<!--        <item>04</item>-->
+<!--        <item>05</item>-->
+<!--        <item>06</item>-->
+<!--        <item>07</item>-->
+<!--        <item>08</item>-->
+<!--        <item>09</item>-->
+<!--        <item>10</item>-->
+<!--        &lt;!&ndash;-->
+<!--        <item>11</item>-->
+<!--        <item>12</item>-->
+<!--        <item>13</item>-->
+<!--        <item>14</item>-->
+<!--        <item>15</item>-->
+<!--        <item>16</item>&ndash;&gt;-->
+<!--    </string-array>-->
+    <string-array name="noOfMembers">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+
+    </string-array>
+<!--    <string-array name="unitDetails">-->
+<!--        <item>Ground Floor</item>-->
+<!--        <item>Loft</item>-->
+<!--        <item>Underground</item>-->
+<!--        <item>Mazanine</item>-->
+<!--        <item>First Floor</item>-->
+<!--        <item>Second Floor</item>-->
+<!--        <item>Third Floor</item>-->
+<!--        <item>Fourth Floor</item>-->
+<!--        <item>Fifth Floor</item>-->
+<!--        <item>Sixth Floor</item>-->
+<!--        <item>Seventh Floor</item>-->
+<!--        <item>Eighth Floor</item>-->
+<!--        <item>Ninth Floor</item>-->
+<!--        <item>Tenth Floor</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="maritalStatus">-->
+<!--        <item>Married</item>-->
+<!--        <item>Unmarried</item>-->
+<!--        <item>Divorce</item>-->
+<!--        <item>Widow</item>-->
+<!--        <item>Widower</item>-->
+<!--        <item>Others</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="relaionshipWithHOH">-->
+<!--        <item>Self</item>-->
+<!--        <item>Spouse</item>-->
+<!--        <item>Child</item>-->
+<!--        <item>Parent</item>-->
+<!--        <item>Sibling</item>-->
+<!--        <item>Relative</item>-->
+<!--        <item>Friend</item>-->
+<!--        <item>Tenant</item>-->
+<!--        <item>Employee</item>-->
+<!--        <item>Rented Tenant</item>-->
+<!--        <item>Others</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="religionList">-->
+<!--        <item>Christianity</item>-->
+<!--        <item>Islam</item>-->
+<!--        <item>Hinduism</item>-->
+<!--        <item>Buddhism</item>-->
+<!--        <item>Judaism</item>-->
+<!--        <item>Sikhism</item>-->
+<!--        <item>Jainism</item>-->
+<!--        <item>Atheism</item>-->
+<!--        <item>Agnosticism</item>-->
+<!--        <item>Others</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="stateList">-->
+<!--        <item>Andaman Nicobar Island</item>-->
+<!--        <item>Andhra Pradesh</item>-->
+<!--        <item>Arunachal Pradesh</item>-->
+<!--        <item>Assam</item>-->
+<!--        <item>Bihar</item>-->
+<!--        <item>Chandigarh</item>-->
+<!--        <item>Chhattisgarh</item>-->
+<!--        <item>Dadra and Nagar Haveli and Daman and Diu</item>-->
+<!--        <item>Delhi</item>-->
+<!--        <item>Goa</item>-->
+<!--        <item>Gujarat</item>-->
+<!--        <item>Haryana</item>-->
+<!--        <item>Himachal Pradesh</item>-->
+<!--        <item>Jammu</item>-->
+<!--        <item>Jharkhand</item>-->
+<!--        <item>Karnataka</item>-->
+<!--        <item>Kerala</item>-->
+<!--        <item>Ladakh</item>-->
+<!--        <item>Lakshadweep</item>-->
+<!--        <item>Leh</item>-->
+<!--        <item>Madhya Pradesh</item>-->
+<!--        <item>Maharashtra</item>-->
+<!--        <item>Manipur</item>-->
+<!--        <item>Meghalaya</item>-->
+<!--        <item>Mizoram</item>-->
+<!--        <item>Nagaland</item>-->
+<!--        <item>Odisha</item>-->
+<!--        <item>Puducherry</item>-->
+<!--        <item>Punjab</item>-->
+<!--        <item>Rajasthan</item>-->
+<!--        <item>Sikkim</item>-->
+<!--        <item>Tamil Nadu</item>-->
+<!--        <item>Telangana</item>-->
+<!--        <item>Tripura</item>-->
+<!--        <item>Uttar Pradesh</item>-->
+<!--        <item>Uttarakhand</item>-->
+<!--        <item>West Bengal</item>-->
+<!--        <item>Other</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="motherTongueList">-->
+<!--        <item>English</item>-->
+<!--        <item>Hindi</item>-->
+<!--        <item>Bengali</item>-->
+<!--        <item>Telugu</item>-->
+<!--        <item>Marathi</item>-->
+<!--        <item>Tamil</item>-->
+<!--        <item>Urdu</item>-->
+<!--        <item>Gujarati</item>-->
+<!--        <item>Kannada</item>-->
+<!--        <item>Oriya</item>-->
+<!--        <item>Punjabi</item>-->
+<!--        <item>Assamese</item>-->
+<!--        <item>Malayalam</item>-->
+<!--        <item>Maithili</item>-->
+<!--        <item>Santali</item>-->
+<!--        <item>Kashmiri</item>-->
+<!--        <item>Nepali</item>-->
+<!--        <item>Sindhi</item>-->
+<!--        <item>Konkani</item>-->
+<!--        <item>Manipuri</item>-->
+<!--        <item>Others</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="access_to_unit">-->
+<!--        <item>Pre-School</item>-->
+<!--        <item>Play Schools</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="educationLevelList">-->
+<!--        <item>Pre-School</item>-->
+<!--        <item>Play Schools</item>-->
+<!--        <item>Kindergarden</item>-->
+<!--        <item>Primary School</item>-->
+<!--        <item>Middle School</item>-->
+<!--        <item>Secondary School</item>-->
+<!--        <item>Senior Secondary</item>-->
+<!--        <item>Undergraduate</item>-->
+<!--        <item>Graduate</item>-->
+<!--        <item>Post Graduate</item>-->
+<!--        <item>Others</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="occupationList">-->
+<!--        <item>Engineer</item>-->
+<!--        <item>Teacher</item>-->
+<!--        <item>Doctor</item>-->
+<!--        <item>Accountant</item>-->
+<!--        <item>Lawyer</item>-->
+<!--        <item>Nurse</item>-->
+<!--        <item>Architect</item>-->
+<!--        <item>Salesperson</item>-->
+<!--        <item>Writer</item>-->
+<!--        <item>Artist</item>-->
+<!--        <item>Farmer</item>-->
+<!--        <item>Chef</item>-->
+<!--        <item>Government Employee</item>-->
+<!--        <item>Firefighter</item>-->
+<!--        <item>Pilot</item>-->
+<!--        <item>Carpenter</item>-->
+<!--        <item>Electrician</item>-->
+<!--        <item>Plumber</item>-->
+<!--        <item>Photographer</item>-->
+<!--        <item>Musician</item>-->
+<!--        <item>Business</item>-->
+<!--        <item>Unemployed</item>-->
+<!--        <item>Cobbler</item>-->
+<!--        <item>Potter</item>-->
+<!--        <item>Self-Employed</item>-->
+<!--        <item>Others</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="typeOfWorkList">-->
+<!--        <item>Administrative</item>-->
+<!--        <item>Customer Service</item>-->
+<!--        <item>Financial Analysis</item>-->
+<!--        <item>Human Resources</item>-->
+<!--        <item>Information Technology</item>-->
+<!--        <item>Marketing</item>-->
+<!--        <item>Project Management</item>-->
+<!--        <item>Research and Development</item>-->
+<!--        <item>Sales</item>-->
+<!--        <item>Teaching</item>-->
+<!--        <item>Writing and Editing</item>-->
+<!--        <item>Consulting</item>-->
+<!--        <item>Healthcare Services</item>-->
+<!--        <item>Legal Services</item>-->
+<!--        <item>Manufacturing and Production</item>-->
+<!--        <item>Construction</item>-->
+<!--        <item>Hospitality and Tourism</item>-->
+<!--        <item>Transportation and Logistics</item>-->
+<!--        <item>Retail</item>-->
+<!--        <item>Freelancing</item>-->
+<!--        <item>Textile</item>-->
+<!--        <item>Leather</item>-->
+<!--        <item>Potter</item>-->
+<!--        <item>Recycled</item>-->
+<!--        <item>Food</item>-->
+<!--        <item>Others</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="placeOfWorkList">-->
+<!--        <item>Inside Dharavi</item>-->
+<!--        <item>Outside Dharavi</item>-->
+<!--    </string-array>-->
+
+
+    <!--    <string-array name="sample_ration_card_color">-->
+<!--        <item>Yellow</item>-->
+<!--        <item>Orange</item>-->
+<!--        <item>White</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="sample_transport_mode">-->
+<!--        <item>Western railway</item>-->
+<!--        <item>Central railway</item>-->
+<!--        <item>Harbour railway</item>-->
+<!--        <item>City Bus</item>-->
+<!--        <item>Private Vehicle</item>-->
+<!--        <item>Walking</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="sample_transport_mode">-->
+<!--        <item>Train</item>-->
+<!--        <item>City Bus</item>-->
+<!--        <item>Auto</item>-->
+<!--        <item>Taxi</item>-->
+<!--        <item>Self Vehicle</item>-->
+<!--        <item>Others</item>-->
+<!--    </string-array>-->
+
+
+
+
+
+<!--    <string-array name="sample_vehicle_mode">-->
+<!--        <item>Hath Gaadi (Hand Picked)</item>-->
+<!--        <item>Thela (4 wheeler cart)</item>-->
+<!--        <item>Cycle</item>-->
+<!--        <item>2 wheeler</item>-->
+<!--        <item>3 wheeler</item>-->
+<!--        <item>4 wheeler</item>-->
+<!--        <item>Others</item>-->
+<!--    </string-array>-->
+
+    <!--    <string-array name="sample_remark_unit">-->
+<!--        <item>Unit is locked and Notice pasted</item>-->
+<!--        <item>Member not co-operating</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="tenement_list">-->
+<!--        <item>BMC Pavti</item>-->
+<!--        <item>Aadhar Card</item>-->
+<!--        <item>Electricity Bill</item>-->
+<!--        <item>Gas Bill</item>-->
+<!--    </string-array>-->
+
+
+    <string-array name="res_proof1_before2000">
+        <item>Voter ID</item>
+        <item>Electricity Connection Bill</item>
+        <item>Survey Pavti or Photo Pass</item>
+        <item>Photocopy of electoral roll book</item>
+        <item>Property Tax Payment Receipt</item>
+        <item>Permission or Receipt for Non-Agriculture use</item>
+        <item>Share Certificate from registered society</item>
+    </string-array>
+
+    <string-array name="res_proof2_before2000">
+        <item>Aadhar Card</item>
+    </string-array>
+
+
+    <string-array name="res_proof1_after2000">
+        <item>Voter ID published in 2011 or before</item>
+        <item>Electricity Connection Bill</item>
+        <item>Survey Pavti or Photo Pass</item>
+        <item>Photocopy of electoral roll book</item>
+        <item>Property Tax Payment Receipt</item>
+        <item>Permission or Receipt for Non-Agriculture use</item>
+        <item>Share Certificate from registered society</item>
+    </string-array>
+
+    <string-array name="res_proof2_after2000">
+        <item>Certified by headmaster of offsprings school showing exact location of hutment</item>
+        <item>Certified by employer with exact address</item>
+        <item>Voter ID (last one year)</item>
+    </string-array>
+
+    <string-array name="res_proof3_after2000">
+        <item>Notarized Consent letter of earlier owner (Sale Purchase Affidavit)</item>
+        <item>Tenancy Agreement (Rent agreement) and Receipt</item>
+    </string-array>
+
+
+    <string-array name="res_proof4_after2000">
+        <item>Aadhar Card</item>
+    </string-array>
+
+    <string-array name="res_proof5_after2000">
+        <item>Payment Receipt of transfer of tenancy from SRA (Rs. 40,000 for Residence)</item>
+    </string-array>
+
+
+    <string-array name="res_proof1_after2011">
+        <item>Voter ID</item>
+        <item>Electricity Connection Bill (OLD and Current)</item>
+        <item>Payment Receipt of transfer of tenancy from SRA (Rs. 40,000 for Residence)</item>
+        <item>Aadhar</item>
+        <item>Driving License</item>
+    </string-array>
+
+    <string-array name="res_proof2_after2011">
+        <item>Tenancy Agreement (Rent agreement) and Receipt</item>
+        <item>Purchase agreements (all owners) and Notarized Consent letter of earlier owner</item>
+        <item>Affidavit from HOH of ground floor structure</item>
+    </string-array>
+
+    <string-array name="res_proof3_after2011">
+        <item>Aadhar Card</item>
+        <item>Driving License</item>
+        <item>Electricity Bill</item>
+        <item>Passport</item>
+        <item>Govt. ID card with photo</item>
+        <item>Verified letter from Government official with a photographs</item>
+        <item>Utility bill</item>
+        <item>Ration Card</item>
+        <item>Telephone bills</item>
+        <item>Notarized Rent Agreement</item>
+        <item>Property tax paid receipt</item>
+        <item>Bank passbook with photo or post office documents</item>
+        <item>Self or Family Pension payments orders Letter provided by employers office on letterhead</item>
+        <item>Bank Statements showing your address</item>
+        <item>Credit Card Statements</item>
+        <item>Copy of the Deal while purchasing the property</item>
+        <item>Copy of Life Insurance Policy certificate</item>
+        <item>Leave and license agreement allocating official accommodations</item>
+        <item>Documents issued by the government authority of a foreign jurisdiction or a letter issued by any foreign embassy</item>
+        <item>Salaried: Bank account details-account number, date of opening and active status</item>
+        <item>Salaried: ESIC or PF</item>
+        <item>Salaried: Previous 3 months salary slip</item>
+        <item>Salaried: Previous 6 months bank statement</item>
+        <item>Salaried: Latest Form 16 or ITR</item>
+        <item>SelfEmployed: Bank account details-account number, date of opening and active status</item>
+        <item>SelfEmployed: GST details</item>
+        <item>SelfEmployed: Income Tax Returns along for the last 3 years</item>
+        <item>SelfEmployed: Balance Sheet and Profit And Loss statement</item>
+        <item>SelfEmployed: Last six months statement of current account</item>
+    </string-array>
+
+    <string-array name="comm_proof1_before2000">
+<!--        <item>Voter ID</item>-->
+        <item>Electricity Connection Bill</item>
+        <item>Survey Pavti or Photo Pass</item>
+<!--        <item>Photocopy of electoral roll book</item>-->
+        <item>Property Tax Payment Receipt</item>
+        <item>Permission or Receipt for Non-Agriculture use</item>
+        <item>Share Certificate from registered society</item>
+    </string-array>
+
+
+    <string-array name="comm_proof2_before2000">
+        <item>Gumasta before 1.1.2000</item> // change
+        <item>Hotel License and payment made for it</item>
+        <item>Restaurant license and payment made for it</item>
+    </string-array>
+
+
+    <string-array name="comm_proof1_after2000">
+<!--        <item>Voter ID published in 2011 or before </item>-->
+        <item>Electricity Connection Bill LF2</item>
+        <item>Survey Pavti or Photo Pass</item>
+<!--        <item>Photocopy of electoral roll book</item>-->
+        <item>Property Tax Payment Receipt</item>
+        <item>Permission or Receipt for Non-Agriculture use</item>
+        <item>Share Certificate from registered society</item>
+    </string-array>
+
+
+    <string-array name="comm_proof2_after2000">
+        <item>Gumasta before 1.1.2000</item>
+        <item>Hotel License and payment made for it</item>
+        <item>Restaurant license and payment made for it</item>
+    </string-array>
+
+    <string-array name="comm_proof3_after2000">
+        <item>Certified by headmaster of offsprings school showing exact location of hutment</item>
+        <item>Certified by employer with exact address</item>
+        <item>Voter ID (last one year)</item>
+    </string-array>
+
+    <string-array name="comm_proof4_after2000">
+        <item>Notarized Consent letter of earlier owner (Sale Purchase Affidavit)</item>
+        <item>Tenancy Agreement (Rent agreement) and Receipt</item>
+    </string-array>
+
+    <string-array name="comm_proof5_after2000">
+        <item>Aadhar</item>
+    </string-array>
+
+    <string-array name="comm_proof6_after2000">
+        <item>Payment Receipt of transfer of tenancy from SRA (Rs. 60,000 for Commercial)</item>
+    </string-array>
+
+    <string-array name="comm_proof1_after2011">
+<!--        <item>Voter ID</item>-->
+        <item>Electricity Connection Bill (OLD and Current)</item>
+        <item>Aadhar Card</item>
+<!--        <item>Driving License</item>-->
+        <item>Payment Receipt of transfer of tenancy from SRA (Rs. 60,000 for Commercial)</item>
+    </string-array>
+
+    <string-array name="comm_proof2_after2011">
+        <item>Purchase agreements (all owners) and Notarized Consent letter of earlier owner</item>
+        <item>Tenancy Agreement (Rent agreement) and Receipt</item>
+        <item>Affidavit from HOH (verification from HOH of ground floor structure)</item>
+    </string-array>
+
+
+    <string-array name="comm_proof3_after2011">
+        <item>Aadhar Card</item>
+        <item>Govt. ID card with photo</item>
+        <item>Verified letter from Government official with a photographs</item>
+        <item>Utility bill</item>
+        <item>Electricity Bill</item>
+        <item>Telephone bills</item>
+        <item>Notarized Rent Agreement</item>
+        <item>Property tax paid receipt</item>
+        <item>Bank Statement from post office saving account</item>
+        <item>Bank Statements showing your address</item>
+        <item>Credit Card Statements</item>
+        <item>Copy of the Deal while purchasing the property</item>
+        <item>Copy of Life Insurance Policy certificate</item>
+        <item>Documents issued by the government department of a foreign jurisdiction or a letter issued by any foreign embassy</item>
+        <item>SelfEmployed: Bank account details-account number, date of opening and active status</item>
+        <item>SelfEmployed: GST details</item>
+        <item>SelfEmployed: Income Tax Returns along for the last 3 years</item>
+        <item>SelfEmployed: Balance Sheet and Profit And Loss statement</item>
+        <item>SelfEmployed: Last six months statement of current account</item>
+
+<!--        <item>Driving License</item>-->
+<!--        <item>Passport</item>-->
+<!--        <item>Ration Card</item>-->
+<!--        <item>Self-Family Pension payments orders Letter provided by employers office on letterhead</item>-->
+<!--        <item>Leave and license agreement from employers allocating official accommodations</item>-->
+<!--        <item>Salaried: Bank account details-account number, date of opening and active status</item>-->
+<!--        <item>Salaried: ESIC-PF</item>-->
+<!--        <item>Salaried: Previous 3 months salary slip</item>-->
+<!--        <item>Salaried: Previous 6 months bank statement</item>-->
+<!--        <item>Salaried: Latest Form 16-ITR</item>-->
+
+    </string-array>
+
+    <string-array name="recent_year_res_doc_list">
+        <item>Electricity Connection Bill</item>
+        <item>Electoral Roll</item>
+    </string-array>
+
+    <string-array name="recent_year_comm_doc_list">
+        <item>Electricity Connection Bill</item>
+<!--        <item>Electrol Roll</item>-->
+        <item>Gumasta</item>
+    </string-array>
+
+    <string-array name="survey_pavti">
+        <item>Survey Pavti</item>
+    </string-array>
+
+    <string-array name="unit_distometer_video">
+        <item>Unit Distometer Video</item>
+    </string-array>
+
+    <string-array name="other_document">
+        <item>Other Document</item>
+    </string-array>
+
+    <string-array name="owner_photo">
+        <item>Owner Photo with unique ID</item>
+    </string-array>
+
+<!--    <string-array name="panchnama_arr">-->
+<!--        <item>Panchnama Signed</item>-->
+<!--        <item>Panchnama not signed</item>-->
+<!--    </string-array>-->
+
+    <string-array name="hoh_member_adhar">
+        <item>Aadhar Card</item>
+    </string-array>
+
+    <string-array name="hoh_member_pan">
+        <item>Pan Card</item>
+    </string-array>
+
+    <string-array name="hoh_member_ration">
+        <item>Ration Card</item>
+    </string-array>
+
+    <string-array name="hoh_member_death_certificate">
+        <item>Death Certificate</item>
+    </string-array>
+
+    <string-array name="hoh_member_salary_proof">
+        <item>Salary Proof</item>
+    </string-array>
+
+    <string-array name="hoh_member_deseas">
+        <item>Disease Proof</item>
+    </string-array>
+
+<!--    <string-array name="remarks_completed">-->
+<!--        <item>Survey form completed</item>-->
+<!--        <item>Survey form partially completed</item>-->
+<!--    </string-array>-->
+<!--    <string-array name="remarks_dispute">-->
+<!--        <item>Multiple HOH claiming the same unit</item>-->
+<!--    </string-array>-->
+<!--    <string-array name="remarks_in_progress">-->
+<!--        <item>Partial submission of documents</item>-->
+<!--    </string-array>-->
+<!--    <string-array name="remarks_on_hold">-->
+<!--        <item>Public conflict on field</item>-->
+<!--        <item>Door Locked</item>-->
+<!--        <item>Member not co-operating</item>-->
+<!--        <item>Member below 18 years</item>-->
+<!--        <item>Others</item>-->
+<!--    </string-array>-->
+
+<!--    <string-array name="remarks_hoh_avail">-->
+<!--        <item>Both annexures signed</item>-->
+<!--        <item>Annexure A not signed</item>-->
+<!--        <item>Annexure B not signed</item>-->
+<!--        <item>Annexure A and B not signed</item>-->
+<!--    </string-array>-->
+<!--    <string-array name="remarks_thumb">-->
+<!--        <item>Thumb Impression not provided</item>-->
+<!--        <item>Thumb Impression provided</item>-->
+<!--    </string-array>-->
+
+    <string-array name="unit_notice_type">
+        <item>Attachment of the notice on door</item>
+    </string-array>
+
+    <string-array name="unit_unique_type">
+        <item>UnitPhoto</item>
+    </string-array>
+
+    // RC
+    <string-array name="rc_proof1_before2000">
+        <item>Voter ID</item>
+        <item>Photocopy of electoral roll book</item>
+        <item>Electricity Connection Bill</item>
+        <item>Survey Pavti or Photo Pass</item>
+        <item>Property Tax payment Receipt</item>
+        <item>Permission or receipt for non-Agriculture use</item>
+        <item>Share Certificate from registered society</item>
+    </string-array>
+
+    <string-array name="rc_proof2_before2000">
+        <item>Gumasta before 1.1.2000</item>
+        <item>Hotel License and payment made for it</item>
+        <item>Restaurant license and payment made for it</item>
+    </string-array>
+
+    <string-array name="rc_proof3_before2000">
+        <item>Electricity Connection Bill</item>
+        <item>Gumasta</item>
+        <item>Electoral Roll</item>
+    </string-array>
+
+
+
+    <string-array name="rc_proof1_before2011">
+        <item>Voter ID published in 2011 or before</item>
+        <item>Photocopy of electoral roll book</item>
+        <item>Electricity Connection Bill</item>
+        <item>Survey Pavti or Photo Pass</item>
+        <item>Property Tax payment Receipt</item>
+        <item>Permission or receipt for non-Agriculture use</item>
+        <item>Share Certificate from registered society</item>
+    </string-array>
+
+    <string-array name="rc_proof2_before2011">
+        <item>Gumasta before 1.1.2000</item>
+        <item>Hotel License and payment made for it</item>
+        <item>Restaurant license and payment made for it</item>
+    </string-array>
+
+    <string-array name="rc_proof_address_before2011">
+        <item>Certified by headmaster of offsprings school showing exact location of hutment</item>
+        <item>Certified by employer with exact address</item>
+        <item>Voter ID (last one year)</item>
+    </string-array>
+
+    //remove address
+
+    <string-array name="rc_proof4_before2011">
+        <item>Aadhar Card</item>
+    </string-array>
+
+    <string-array name="rc_proof5_before2011">
+        <item>Payment Receipt of transfer of tenancy from SRA (Rs. 60,000 for Residence cum Commercial)</item>
+    </string-array>
+
+    <string-array name="rc_proof6_before2011">
+        <item>Electricity Connection Bill</item>
+        <item>Gumasta</item>
+        <item>Electoral Roll</item>
+    </string-array>
+
+    <string-array name="rc_proof1_after2011">
+        <item>Voter ID</item>
+        <item>Driving Licence</item>
+        <item>Aadhar Card</item>
+        <item>Electricity Connection Bill (OLD and Current)</item>
+        <item>Payment Receipt of transfer of tenancy from SRA (Rs. 60,000 for Residence cum Commercial)</item>
+    </string-array>
+
+    <string-array name="rc_proof2_after2011">
+        <item>Purchase agreements (all owners)</item>
+        <item>Notarized Consent letter of earlier owner (OLD and Current)</item>
+        <item>Tenancy Agreement (Rent agreement) and Receipt (OLD and Current)</item>
+        <item>Affidavit from HOH of ground floor structure</item>
+    </string-array>
+
+
+    <string-array name="rc_proof3_after2011">
+        <item>Driving License</item>
+        <item>Aadhar Card</item>
+        <item>Passport</item>
+        <item>Govt. ID card with photo</item>
+        <item>Verified letter from Government official with a photographs</item>
+        <item>Utility bill</item>
+        <item>Ration Card</item>
+        <item>Electricity Bill</item>
+        <item>Telephone bills</item>
+        <item>Notarized Rent Agreement</item>
+        <item>Property tax paid receipt</item>
+        <item>Bank Statement from post office saving account</item>
+        <item>Self or Family Pension payments orders Letter provided by employers office on letterhead</item>
+        <item>Bank Statements showing your address</item>
+        <item>Credit Card Statements</item>
+        <item>Copy of the Deal while purchasing the property</item>
+        <item>Copy of Life Insurance Policy certificate</item>
+        <item>Leave and license agreement from employers allocating official accommodations</item>
+        <item>Documents issued by the government department of a foreign jurisdiction or a letter issued by any foreign embassy</item>
+
+        <item>Salaried: Bank account details-account number, date of opening and active status</item>
+        <item>Salaried: ESIC or PF</item>
+        <item>Salaried: Previous 3 months salary slip</item>
+        <item>Salaried: Previous 6 months bank statement</item>
+        <item>Salaried: Latest Form 16 or ITR</item>
+
+        <item>SelfEmployed: Bank account details-account number, date of opening and active status</item>
+        <item>SelfEmployed: GST details</item>
+        <item>SelfEmployed: Income Tax Returns along for the last 3 years</item>
+        <item>SelfEmployed: Balance Sheet and Profit And Loss statement</item>
+        <item>SelfEmployed: Last six months statement of current account</item>
+
+
+
+    </string-array>
+
+
+    <string-array name="disto_pdf">
+        <item>Unit_Layout</item>
+    </string-array>
+
+    <string-array name="rc_disto_pdf">
+        <item>unit_layout_res</item>
+        <item>unit_layout_comm</item>
+    </string-array>
+
+    <string-array name="rent_ownership">
+        <item>Tenancy Agreement (Rent agreement) and Receipt</item>
+        <item>Affidavit from HOH of ground floor structure</item>
+    </string-array>
+
+
+    <string-array name="tenem_docs">
+        <item>BMC Pavti</item>
+<!--        <item>Bank Account or Passbook details</item>-->
+        <item>Bank Account/Passbook details</item>
+        <item>Electricity Bill</item>
+        <item>Water Bill</item>
+        <item>Property Tax Receipt</item>
+        <item>Lease Agreement or Rent Agreement</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="rel_str_docs">
+        <item>Proof of Religious Structure Registered</item>
+    </string-array>
+
+    <string-array name="trustee_docs">
+        <item>Proof showing names of Trustee</item>
+    </string-array>
+
+    <string-array name="noc_docs">
+        <item>NOC document</item>
+    </string-array>
+
+    <string-array name="approval_docs">
+        <item>Govt Approval document</item>
+    </string-array>
+
+    <string-array name="festiv_docs">
+        <item>Police or traffic or any authority permission</item>
+    </string-array>
+
+
+    <string-array name="rel_amen_proofs">
+        <item>Voter ID</item>
+<!--        <item>Electricity Connection Receipt or Electricity Bill</item>-->
+        <item>Electricity Connection Receipt/ Electricity Bill</item>
+<!--        <item>Survey Pavti or Photo Pass</item>-->
+        <item>Photo pass/ Survey Pavti</item>
+<!--        <item>Photocopy of electoral roll book</item>-->
+        <item>Photocopy of electrol roll book</item>
+        <item>Property Tax Payment Receipt</item>
+<!--        <item>Permission or Receipt for Non-Agriculture use</item>-->
+        <item>Permission/Receipt for Non-Agriculture use</item>
+        <item>Share Certificate from registered society</item>
+    </string-array>
+
+    <string-array name="drp_type">
+        <item>DRP_Officer_Photo</item>
+    </string-array>
+
+    <string-array name="drppl_type">
+        <item>DRPPL_Officer_Photo</item>
+    </string-array>
+
+    <string-array name="proof_of_str">
+        <item>Aadhar Card - Mentioning Floor Number</item>
+        <item>Driving License - Mentioning Floor Number</item>
+        <item>Electricity Bill Mentioning Floor Number - Old &amp; Latest</item>
+        <item>Passport - Mentioning Floor Number</item>
+        <item>Ration Card - Mentioning Floor Number</item>
+        <item>Registered Chain of Purchase Agreements &amp; Notarized consent letter - Mentioning Floor Number</item>
+        <item>Registered Rent Agreement Mentioning Floor Number - Old &amp; Latest</item>
+        <item>The affidavit given by the HOH of the upper floor and certified by the Eligible HOH of the ground floor hutment</item>
+        <item>Voter ID - Mentioning Floor Number</item>
+    </string-array>
+
+</resources>
